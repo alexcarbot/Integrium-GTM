@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Features — Integrium Core | Modern EHR for Skilled Nursing &amp; Long-Term Care</title>
-  <meta name="description" content="Explore Integrium Core's purpose-built EHR features for skilled nursing facilities and long-term care: AI-enabled clinical rules, integrated compliance, real-time billing validation, MDS integration, eMAR, and modern UX.">
+  <title>Features — Integrium Core | FHIR-Native Wound Care EHR</title>
+  <meta name="description" content="Explore Integrium Core's purpose-built wound care EHR features: 715K+ terminology concepts, deterministic billing rules engine with RuleTrace audit trail, FHIR R4 native on Medplum, and CMS quarterly refresh pipeline.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,8 +56,8 @@
     <div class="container">
       <div class="page-hero-content">
         <span class="section-eyebrow">CORE CAPABILITIES</span>
-        <h1 class="section-title">Purpose-built for skilled nursing.<br>Not adapted from hospital EHRs.</h1>
-        <p class="section-desc">Every workflow, rule engine, and validation in Integrium Core is engineered for the clinical, regulatory, and billing demands of post-acute care — so your team can focus on residents, not workarounds.</p>
+        <h1 class="section-title">Purpose-built for wound care.<br>FHIR-native from day one.</h1>
+        <p class="section-desc">Every terminology map, billing rule, and validation in Integrium Core is engineered for the clinical, regulatory, and reimbursement demands of wound care programs — powered by 715K+ authoritative concepts and a deterministic rules engine with full audit trail.</p>
       </div>
     </div>
   </section>
@@ -70,8 +70,8 @@
           <div class="feature-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
           </div>
-          <h3 class="feature-title">AI-Enabled Clinical Rules</h3>
-          <p class="feature-desc">Intelligent decision support that flags documentation gaps, medication interactions, and care plan inconsistencies before they become survey findings or adverse events.</p>
+          <h3 class="feature-title">Clinical Terminology Intelligence</h3>
+          <p class="feature-desc">715K+ authoritative concepts across 6 code systems — SNOMED CT, ICD-10-CM/PCS, CPT, HCPCS, and LOINC — with deterministic SNOMED-to-ICD-10 complex map evaluation for wound care documentation.</p>
         </div>
 
         <div class="feature-card reveal reveal-delay-2">
@@ -86,8 +86,8 @@
           <div class="feature-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <h3 class="feature-title">Integrated Compliance Officer</h3>
-          <p class="feature-desc">CMS Conditions of Participation, state survey requirements, and HIPAA monitoring built into every screen — continuous readiness, not last-minute scrambles.</p>
+          <h3 class="feature-title">12-Endpoint Billing Rules Engine</h3>
+          <p class="feature-desc">Deterministic rules for CPT calculation, NCCI edit validation, LCD compliance, medical necessity checks, and pre-submission sign-and-lock — every decision logged with RuleTrace audit trail.</p>
         </div>
 
         <div class="feature-card reveal reveal-delay-1">
@@ -102,16 +102,16 @@
           <div class="feature-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M9 14l2 2 4-4"/></svg>
           </div>
-          <h3 class="feature-title">MDS/OASIS Integration</h3>
-          <p class="feature-desc">Streamlined assessment workflows with auto-population from clinical data, built-in validation rules, and electronic transmission to CMS.</p>
+          <h3 class="feature-title">FHIR-Native Data Model</h3>
+          <p class="feature-desc">Built on Medplum with 5 FHIR R4 profiles — WoundCondition, WoundObservationPanel, WoundProcedure, Encounter, and Claim — aligned with the HL7 wound assessment implementation guide.</p>
         </div>
 
         <div class="feature-card reveal reveal-delay-3">
           <div class="feature-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 1.5H8A6.5 6.5 0 0 0 8 14.5h1"/><path d="M13.5 1.5H16A6.5 6.5 0 0 1 16 14.5h-1"/><line x1="8" y1="8" x2="16" y2="8"/><path d="M12 14.5v4"/><path d="M9 22h6"/></svg>
           </div>
-          <h3 class="feature-title">eMAR &amp; Medication Management</h3>
-          <p class="feature-desc">Barcode medication administration, pharmacy integration, and medication interaction alerts — closing the loop from order to administration.</p>
+          <h3 class="feature-title">CMS Quarterly Refresh</h3>
+          <p class="feature-desc">Automated pipeline for NCCI edits, MPFS fee schedules, ICD-10 updates, and LCD policy changes — SHA-256 integrity verification, dry-run validation, and full audit logging on every refresh cycle.</p>
         </div>
 
       </div>
@@ -127,15 +127,15 @@
 
       <div class="deep-dive reveal">
         <div class="deep-dive-content">
-          <span class="section-eyebrow">Clinical Intelligence</span>
-          <h3 class="deep-dive-title">AI-enabled rules that think like your best clinicians</h3>
-          <p class="deep-dive-text">Legacy EHRs rely on static alerts that clinicians learn to ignore. Integrium Core's AI-enabled clinical rules engine analyzes the full clinical picture — diagnoses, medications, lab results, care plans, and documentation patterns — to surface actionable insights that actually matter.</p>
-          <p class="deep-dive-text">The system learns your facility's documentation patterns over time, reducing false positives and prioritizing the gaps most likely to affect resident outcomes or survey results. It is clinical decision support that earns trust instead of alert fatigue.</p>
+          <span class="section-eyebrow">Terminology Intelligence</span>
+          <h3 class="deep-dive-title">Deterministic rules backed by 715K+ authoritative concepts</h3>
+          <p class="deep-dive-text">Legacy EHRs rely on static code lookups that miss the complexity of wound care terminology. Integrium Core's terminology service spans 6 code systems — SNOMED CT, ICD-10-CM/PCS, CPT, HCPCS, and LOINC — with deterministic SNOMED-to-ICD-10 complex map evaluation that resolves wound diagnoses to the correct billing codes.</p>
+          <p class="deep-dive-text">Every terminology decision is traceable and repeatable. No machine learning, no black boxes — the same input always produces the same output, giving your billing and clinical teams full confidence in every code assignment.</p>
           <ul class="deep-dive-list">
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Real-time documentation gap detection across assessments, care plans, and physician orders</li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Medication interaction alerts with clinical severity scoring</li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Care plan consistency checks across interdisciplinary team inputs</li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Adaptive learning that reduces false positives over time</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>715K+ concepts across 6 authoritative code systems with wound care focus</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>SNOMED-to-ICD-10 complex map evaluation for accurate wound diagnosis coding</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Deterministic, repeatable results — same input, same output, every time</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>CMS quarterly refresh keeps all code systems current automatically</li>
           </ul>
         </div>
         <div class="deep-dive-visual">
@@ -147,15 +147,15 @@
 
       <div class="deep-dive reverse reveal">
         <div class="deep-dive-content">
-          <span class="section-eyebrow">Regulatory Readiness</span>
-          <h3 class="deep-dive-title">Your always-on compliance officer</h3>
-          <p class="deep-dive-text">State surveys should not require a two-week scramble. Integrium Core embeds regulatory monitoring into every workflow — CMS Conditions of Participation, state-specific survey requirements, and HIPAA safeguards are enforced continuously, not checked retroactively.</p>
-          <p class="deep-dive-text">The integrated compliance dashboard gives administrators a real-time view of facility readiness, with drill-down reporting by unit, resident, and regulatory domain. When surveyors arrive, your documentation is already in order because it was built that way from day one.</p>
+          <span class="section-eyebrow">Billing Rules Engine</span>
+          <h3 class="deep-dive-title">12 deterministic endpoints — every decision auditable</h3>
+          <p class="deep-dive-text">Integrium Core's billing rules engine runs 12 deterministic endpoints covering CPT calculation, NCCI edit validation, LCD compliance, medical necessity checks, and pre-submission sign-and-lock validation. Every rule fires the same way every time — no probabilistic models, no unexplainable outputs.</p>
+          <p class="deep-dive-text">The RuleTrace audit trail captures the full decision chain for every billing validation: which rules fired, what data was evaluated, and what the outcome was. When payers question a claim, you have a complete, timestamped record of every validation that occurred before submission.</p>
           <ul class="deep-dive-list">
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Continuous CMS CoP monitoring with real-time readiness scoring</li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>State-specific survey requirement tracking and gap alerts</li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>HIPAA access logging and privacy safeguard enforcement</li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Administrator dashboard with drill-down by unit and regulatory domain</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>NCCI edit pair validation and LCD compliance checks at point of care</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Pre-submission sign-and-lock validation catches errors before claims go out</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>RuleTrace audit trail with full decision chain for every validation</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>State-specific payer rules (e.g., Ohio MCO SA modifier logic)</li>
           </ul>
         </div>
         <div class="deep-dive-visual">
@@ -167,15 +167,15 @@
 
       <div class="deep-dive reveal">
         <div class="deep-dive-content">
-          <span class="section-eyebrow">Revenue Integrity</span>
-          <h3 class="deep-dive-title">Automated billing validation that relieves your providers</h3>
-          <p class="deep-dive-text">Integrium Core automates complex billing validations against Medicare rules directly within the clinical workflow. When a clinician documents a treatment that isn't billable, the system alerts them immediately — not days later when the claim is denied. This is fundamentally different from legacy EHRs that separate clinical documentation from billing compliance.</p>
-          <p class="deep-dive-text">No existing product combines clinical workflow integration with payer compliance checks the way Integrium Core does. The result: providers make informed decisions at the point of care, denied claims drop dramatically, and your billing team stops spending hours on rework and appeals.</p>
+          <span class="section-eyebrow">FHIR-Native Architecture</span>
+          <h3 class="deep-dive-title">Built on Medplum — FHIR R4 from the ground up</h3>
+          <p class="deep-dive-text">Integrium Core is built natively on Medplum's FHIR R4 platform, not retrofitted with a FHIR facade. Five purpose-built profiles — WoundCondition, WoundObservationPanel, WoundProcedure, Encounter, and Claim — model the full wound care lifecycle from assessment through billing, aligned with the HL7 wound assessment implementation guide.</p>
+          <p class="deep-dive-text">Native FHIR means interoperability is built in, not bolted on. Clinical data flows directly into billing workflows through structured resources, and the CMS quarterly refresh pipeline keeps NCCI edits, MPFS fee schedules, ICD-10 updates, and LCD policies current — with SHA-256 integrity verification, dry-run validation, and audit logging on every cycle.</p>
           <ul class="deep-dive-list">
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Pre-submission PDPM classification validation against clinical record</li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Medicare/Medicaid rule checks with payer-specific edit libraries</li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Clinical-to-billing documentation cross-referencing</li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Denial trend analytics with root-cause identification</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>5 FHIR R4 profiles purpose-built for wound care documentation and billing</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>CMS quarterly refresh with SHA-256 verification and dry-run validation</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Native Medplum platform — no FHIR translation layer or middleware</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>106 scenario validation suite ensures data integrity across updates</li>
           </ul>
         </div>
         <div class="deep-dive-visual">
@@ -206,7 +206,7 @@
       <div class="section-header reveal">
         <span class="section-eyebrow">Built Different</span>
         <h2 class="section-title">Legacy EHR vs. Integrium Core</h2>
-        <p class="section-desc">Legacy systems were designed for hospitals and adapted for post-acute care. Integrium Core was purpose-built for skilled nursing from day one.</p>
+        <p class="section-desc">Legacy systems lack wound-care-specific terminology, deterministic billing validation, and native FHIR architecture. Integrium Core was purpose-built for wound care from day one.</p>
       </div>
       <div class="reveal">
         <table class="comparison-table">
@@ -219,37 +219,37 @@
           </thead>
           <tbody>
             <tr>
-              <td>SNF-specific clinical workflows</td>
-              <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-partial"><line x1="5" y1="12" x2="19" y2="12"/></svg></td>
-              <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-check"><polyline points="20 6 9 17 4 12"/></svg></td>
-            </tr>
-            <tr>
-              <td>AI-enabled clinical rules</td>
+              <td>Authoritative terminology (715K+ concepts)</td>
               <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></td>
               <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-check"><polyline points="20 6 9 17 4 12"/></svg></td>
             </tr>
             <tr>
-              <td>Integrated compliance officer</td>
+              <td>SNOMED complex map evaluation</td>
               <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></td>
               <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-check"><polyline points="20 6 9 17 4 12"/></svg></td>
             </tr>
             <tr>
-              <td>Modern responsive interface</td>
+              <td>Deterministic billing rules with audit trail</td>
               <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></td>
               <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-check"><polyline points="20 6 9 17 4 12"/></svg></td>
             </tr>
             <tr>
-              <td>Real-time billing validation</td>
+              <td>FHIR R4 native data model</td>
+              <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></td>
+              <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-check"><polyline points="20 6 9 17 4 12"/></svg></td>
+            </tr>
+            <tr>
+              <td>CMS quarterly auto-refresh</td>
+              <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></td>
+              <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-check"><polyline points="20 6 9 17 4 12"/></svg></td>
+            </tr>
+            <tr>
+              <td>Pre-submission sign-and-lock validation</td>
               <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-partial"><line x1="5" y1="12" x2="19" y2="12"/></svg></td>
               <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-check"><polyline points="20 6 9 17 4 12"/></svg></td>
             </tr>
             <tr>
-              <td>MDS auto-population</td>
-              <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-partial"><line x1="5" y1="12" x2="19" y2="12"/></svg></td>
-              <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-check"><polyline points="20 6 9 17 4 12"/></svg></td>
-            </tr>
-            <tr>
-              <td>Mobile point-of-care</td>
+              <td>State-specific payer rules (e.g., Ohio MCO SA modifier)</td>
               <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></td>
               <td><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="comparison-check"><polyline points="20 6 9 17 4 12"/></svg></td>
             </tr>
@@ -285,7 +285,7 @@
             </svg>
             <span class="footer-logo-text">INTEGRIUM</span>
           </a>
-          <p>Modern EHR purpose-built for skilled nursing and long-term care. AI-enabled clinical intelligence, integrated compliance, and intuitive design — the platform post-acute operators trust.</p>
+          <p>FHIR-native wound care EHR with 715K+ terminology concepts, deterministic billing rules, and CMS quarterly refresh — the platform wound care programs trust.</p>
         </div>
         <div class="footer-col">
           <h4>Platform</h4>

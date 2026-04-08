@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How It Works — Integrium Core | EHR Implementation for SNF &amp; LTC</title>
-  <meta name="description" content="From assessment to go-live in weeks, not months. A structured EHR implementation designed for skilled nursing facilities and long-term care operations.">
+  <title>How It Works — Integrium CORE | Wound Care EHR</title>
+  <meta name="description" content="Wound care platform architecture: terminology service, deterministic rules engine, FHIR R4 clinical workflows, and billing validation pipeline with CMS quarterly refresh.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,9 +61,9 @@
     <div class="page-hero-grid"></div>
     <div class="container">
       <div class="page-hero-content">
-        <span class="section-eyebrow">IMPLEMENTATION</span>
-        <h1 class="section-title">From assessment to go-live in weeks, not months</h1>
-        <p class="section-desc">A structured implementation designed around the realities of running a skilled nursing facility &mdash; with zero disruption to resident care and clinical operations.</p>
+        <span class="section-eyebrow">PLATFORM ARCHITECTURE</span>
+        <h1 class="section-title">How Integrium CORE processes wound care data</h1>
+        <p class="section-desc">Four architectural layers transform clinical terminology into validated billing claims &mdash; every step deterministic, every decision traceable.</p>
       </div>
     </div>
   </section>
@@ -72,30 +72,30 @@
     <div class="how-bg-gradient"></div>
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-eyebrow">The Process</span>
-        <h2 class="section-title">Four steps to transforming your facility</h2>
-        <p class="section-desc">Every SNF is different. Our implementation adapts to your clinical workflows, regulatory environment, and operational priorities.</p>
+        <span class="section-eyebrow">The Architecture</span>
+        <h2 class="section-title">Four layers from terminology to validated claim</h2>
+        <p class="section-desc">Each layer is independently testable and produces traceable output. No black boxes, no probabilistic guesses.</p>
       </div>
       <div class="steps">
         <div class="step reveal reveal-delay-1">
           <div class="step-number">1</div>
-          <h3 class="step-title">Assess</h3>
-          <p class="step-desc">Facility audit, workflow analysis, data migration planning, and compliance gap assessment tailored to your current operations.</p>
+          <h3 class="step-title">Terminology Service</h3>
+          <p class="step-desc">Loads 715K+ concepts from SNOMED CT, ICD-10-CM, CPT, and HCPCS authoritative distributions. Complex map evaluation handles context-dependent translations for wound care diagnoses.</p>
         </div>
         <div class="step reveal reveal-delay-2">
           <div class="step-number">2</div>
-          <h3 class="step-title">Configure</h3>
-          <p class="step-desc">Clinical rule customization, care plan templates, billing workflow setup, and MDS configuration aligned to your facility&rsquo;s needs.</p>
+          <h3 class="step-title">Rules Engine</h3>
+          <p class="step-desc">12 deterministic billing endpoints backed by PostgreSQL. Each endpoint evaluates wound care billing rules &mdash; NCCI edits, LCD requirements, CPT selection &mdash; and returns a RuleTrace audit record.</p>
         </div>
         <div class="step reveal reveal-delay-3">
           <div class="step-number">3</div>
-          <h3 class="step-title">Go Live</h3>
-          <p class="step-desc">Phased rollout starting with one unit, on-site support, real-time monitoring, and parallel running alongside your legacy system.</p>
+          <h3 class="step-title">Clinical Workflow</h3>
+          <p class="step-desc">FHIR R4 profiles for wound assessment panels, dual-coded conditions (SNOMED + ICD-10), and structured clinical documentation that feeds directly into the billing pipeline.</p>
         </div>
         <div class="step reveal reveal-delay-4">
           <div class="step-number">4</div>
-          <h3 class="step-title">Optimize</h3>
-          <p class="step-desc">Continuous AI model improvement, quarterly business reviews, regulatory updates, and staff feedback loops that drive outcomes.</p>
+          <h3 class="step-title">Billing Validation</h3>
+          <p class="step-desc">CPT calculation, NCCI conflict detection, LCD gap analysis, and sign-and-lock checks run on every encounter. CMS quarterly refresh pipeline keeps all rules current with effective dates.</p>
         </div>
       </div>
     </div>
@@ -104,31 +104,31 @@
   <section class="section" style="background: var(--int-white);">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-eyebrow">Why It Works</span>
-        <h2 class="section-title">Built around how facilities actually operate</h2>
-        <p class="section-desc">No rip-and-replace. No care disruptions. Integrium Core fits into your world from day one.</p>
+        <span class="section-eyebrow">Design Principles</span>
+        <h2 class="section-title">Why deterministic rules, not AI</h2>
+        <p class="section-desc">Billing compliance demands explainability and auditability. Every decision traces to a specific rule, not a probability score.</p>
       </div>
       <div class="features-grid">
         <div class="feature-card reveal reveal-delay-1">
           <div class="feature-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
-          <h3 class="feature-title">Zero Downtime Migration</h3>
-          <p class="feature-desc">We run parallel systems during transition so clinical staff never lose access to resident records. Your facility operates without interruption throughout the entire migration process.</p>
+          <h3 class="feature-title">FHIR R4 Native</h3>
+          <p class="feature-desc">Clinical data is stored and exchanged using FHIR R4 resources from the start &mdash; Condition, Observation, Procedure, and Claim profiles purpose-built for wound care workflows.</p>
         </div>
         <div class="feature-card reveal reveal-delay-2">
           <div class="feature-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h3 class="feature-title">On-Site Training</h3>
-          <p class="feature-desc">Role-specific training for nurses, CNAs, MDS coordinators, billing staff, and administrators. Live, hands-on sessions &mdash; not self-service videos &mdash; tailored to each team&rsquo;s daily workflow.</p>
+          <h3 class="feature-title">Full RuleTrace</h3>
+          <p class="feature-desc">Every billing endpoint returns a complete trace of which rules evaluated, what data was considered, and why the decision was made. No black boxes &mdash; every output is auditable.</p>
         </div>
         <div class="feature-card reveal reveal-delay-3">
           <div class="feature-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           </div>
-          <h3 class="feature-title">Continuous Improvement</h3>
-          <p class="feature-desc">AI models learn from your facility&rsquo;s clinical data, improving accuracy over time. Quarterly reviews, regulatory updates, and feedback loops ensure the platform evolves with your needs.</p>
+          <h3 class="feature-title">CMS Quarterly Refresh</h3>
+          <p class="feature-desc">Updated NCCI edit tables, LCD changes, and code set revisions are ingested from authoritative CMS distributions. Version-controlled rules with effective dates keep validation current.</p>
         </div>
       </div>
     </div>
@@ -137,53 +137,53 @@
   <section class="section" style="background: var(--int-silver-100);">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-eyebrow">What to Expect</span>
-        <h2 class="section-title">Your implementation timeline</h2>
-        <p class="section-desc">From kickoff to full deployment, here&rsquo;s the week-by-week journey to getting Integrium Core running in your facility.</p>
+        <span class="section-eyebrow">Data Flow</span>
+        <h2 class="section-title">How data moves through the platform</h2>
+        <p class="section-desc">From clinical documentation through terminology translation to validated billing claim &mdash; each stage is traceable and auditable.</p>
       </div>
       <div class="timeline reveal">
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-week">Week 1&ndash;2</div>
-          <h3 class="timeline-title">Discovery &amp; Assessment</h3>
+          <div class="timeline-week">Layer 1</div>
+          <h3 class="timeline-title">Clinical Data Capture</h3>
           <ul class="timeline-bullets">
-            <li>Comprehensive facility audit of current workflows and clinical processes</li>
-            <li>Legacy EHR data mapping and migration feasibility analysis</li>
-            <li>Compliance gap assessment against CMS and state survey requirements</li>
-            <li>Stakeholder interviews with nursing, billing, and administrative leadership</li>
+            <li>Wound assessment panels capture size, depth, tissue type, and location</li>
+            <li>FHIR R4 Observation and Condition resources store structured clinical data</li>
+            <li>Dual-coded conditions maintain both SNOMED CT and ICD-10-CM representations</li>
+            <li>Clinical documentation feeds directly into the terminology service</li>
           </ul>
         </div>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-week">Week 3&ndash;4</div>
-          <h3 class="timeline-title">Configuration &amp; Data Migration</h3>
+          <div class="timeline-week">Layer 2</div>
+          <h3 class="timeline-title">Terminology Translation</h3>
           <ul class="timeline-bullets">
-            <li>Clinical rule engine customization for your facility&rsquo;s care protocols</li>
-            <li>Care plan templates, MDS configuration, and billing workflow setup</li>
-            <li>Historical resident data migration with full validation and reconciliation</li>
-            <li>Integration connections with pharmacy, lab, and billing clearinghouse systems</li>
+            <li>715K+ concepts from authoritative SNOMED CT, ICD-10-CM, CPT, and HCPCS distributions</li>
+            <li>Complex map evaluation handles laterality, specificity, and context-dependent mappings</li>
+            <li>Cross-coding between clinical terms and billing codes uses deterministic rules</li>
+            <li>Translation output feeds into CPT calculation and billing validation</li>
           </ul>
         </div>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-week">Week 5&ndash;6</div>
-          <h3 class="timeline-title">Training &amp; Parallel Run</h3>
+          <div class="timeline-week">Layer 3</div>
+          <h3 class="timeline-title">Rules Engine Processing</h3>
           <ul class="timeline-bullets">
-            <li>Role-specific on-site training for nurses, CNAs, MDS coordinators, and billing staff</li>
-            <li>Parallel running with legacy system to validate data accuracy and workflows</li>
-            <li>Real-time monitoring and daily check-ins with your implementation team</li>
-            <li>Rapid iteration based on staff feedback and documentation quality data</li>
+            <li>12 deterministic billing endpoints evaluate NCCI edits, LCD rules, and CPT selection</li>
+            <li>PostgreSQL-backed rule storage with version control and effective dates</li>
+            <li>106 dual-reviewed billing scenarios validated against CMS guidelines</li>
+            <li>Every rule evaluation produces a complete RuleTrace audit record</li>
           </ul>
         </div>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-week">Week 7+</div>
-          <h3 class="timeline-title">Go-Live &amp; Optimization</h3>
+          <div class="timeline-week">Layer 4</div>
+          <h3 class="timeline-title">Validated Claim Output</h3>
           <ul class="timeline-bullets">
-            <li>Phased go-live starting with one unit before facility-wide rollout</li>
-            <li>On-site support team present during the critical first weeks of operation</li>
-            <li>Continuous AI model refinement based on real clinical documentation data</li>
-            <li>Quarterly business reviews with facility leadership and ongoing regulatory updates</li>
+            <li>Sign-and-lock gate validates ICD-10 specificity, laterality, and dx pointer order</li>
+            <li>E&amp;M level, smoking status, and POA indicators checked before release</li>
+            <li>CMS quarterly refresh pipeline ingests updated rules from authoritative distributions</li>
+            <li>684+ automated tests verify engine behavior across the full validation pipeline</li>
           </ul>
         </div>
       </div>
@@ -193,44 +193,44 @@
   <section class="section" style="background: var(--int-white);">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-eyebrow">Common Questions</span>
+        <span class="section-eyebrow">Technical Questions</span>
         <h2 class="section-title">Frequently asked questions</h2>
       </div>
       <div class="faq-list reveal">
         <div class="faq-item">
           <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
-            How long does a typical implementation take?
+            What FHIR version does Integrium CORE use?
             <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq-answer"><div class="faq-answer-inner">Most single-facility implementations are fully operational within 6&ndash;8 weeks from kickoff. The exact timeline depends on the complexity of your legacy data migration, the number of integrations required, and the size of your facility. Multi-facility groups with complex configurations typically take 8&ndash;12 weeks, with phased rollouts across locations.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">Integrium CORE is built natively on FHIR R4 (4.0.1). Clinical data is stored as FHIR resources from the start &mdash; Condition, Observation, Procedure, and Claim profiles are purpose-built for wound care workflows. The platform uses FHIR-native APIs for data exchange, not translation layers on top of proprietary formats.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
-            Can you migrate data from our existing legacy EHR?
+            How does the rules engine stay current with CMS changes?
             <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq-answer"><div class="faq-answer-inner">Yes. We have proven migration paths from all major SNF/LTC EHR platforms including PointClickCare, MatrixCare, American HealthTech, and others. Our migration team handles data extraction, mapping, validation, and reconciliation &mdash; with complete audit trails to ensure no resident records are lost or corrupted during transition.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">The CMS quarterly refresh pipeline ingests updated NCCI edit tables, LCD revisions, and code set changes directly from authoritative CMS distributions. Rule updates are version-controlled in PostgreSQL with effective dates, so the engine always validates against the rules in effect at the time of service. No manual rule updates are required.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
-            What does the staff training approach look like?
+            What does the RuleTrace audit trail contain?
             <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq-answer"><div class="faq-answer-inner">We provide role-specific, on-site training for every clinical and administrative role. Nurses and CNAs learn documentation workflows. MDS coordinators train on the assessment tools and AI-assisted coding. Billing staff cover claim validation and submission. Administrators get dashboard and reporting training. All sessions are live and hands-on, with follow-up refresher sessions included.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">Every billing decision produces a RuleTrace record that includes: which rules fired, what clinical and billing data was evaluated, the pass/fail result of each validation step, the rule version and effective date, and a timestamp. RuleTrace records are immutable and exportable for payer audits, internal review, or compliance reporting.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
-            Is there any downtime during the transition?
+            Is the platform cloud-hosted or on-premise?
             <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq-answer"><div class="faq-answer-inner">No. We run Integrium Core in parallel with your existing system during the transition period, so clinical staff always have access to resident records. The cutover is planned around your facility&rsquo;s schedule and operations, with on-site support available throughout. There is no point at which your team loses access to critical documentation.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">Integrium CORE is designed as a multi-tenant cloud platform with PostgreSQL for rule storage and FHIR R4 for clinical data. The architecture supports tenant isolation for data security. Deployment details and hosting options can be discussed during a technical demo.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
-            Does Integrium Core work with our existing pharmacy and lab systems?
+            How does terminology translation work for wound care?
             <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq-answer"><div class="faq-answer-inner">Yes. Integrium Core supports interoperability with major long-term care pharmacy providers, lab systems, and billing clearinghouses out of the box. We use standard HL7 and FHIR interfaces to connect with your existing ecosystem, including eMAR integration, electronic lab ordering, and automated result posting. Your pharmacy and lab workflows continue uninterrupted.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">The terminology service loads 715K+ concepts from authoritative SNOMED CT, ICD-10-CM, CPT, and HCPCS distributions. When a clinician documents a wound care condition (e.g., diabetic foot ulcer), the complex map evaluation engine translates the clinical SNOMED term to the correct ICD-10-CM billing code, handling laterality, specificity, and context-dependent mappings deterministically.</div></div>
         </div>
       </div>
     </div>
@@ -240,10 +240,10 @@
     <div class="cta-bg"></div>
     <div class="container">
       <div class="cta-content reveal">
-        <h2 class="cta-title">Start your implementation &mdash; talk to our team</h2>
-        <p class="cta-desc">Our implementation specialists will walk you through the timeline, data migration plan, and training approach tailored to your facility.</p>
+        <h2 class="cta-title">See the platform architecture in a live demo</h2>
+        <p class="cta-desc">Walk through the terminology service, rules engine, and billing validation pipeline with wound care scenarios from your own practice.</p>
         <div class="cta-actions">
-          <a href="contact.html" class="btn btn-cta">Schedule a Demo</a>
+          <a href="contact.html" class="btn btn-cta">Request a Demo</a>
           <a href="features.html" class="btn btn-secondary">Explore Features</a>
         </div>
       </div>
@@ -262,7 +262,7 @@
             </svg>
             <span class="footer-logo-text">INTEGRIUM</span>
           </a>
-          <p>Modern EHR built on a foundation of clinical excellence, integrated compliance, and intuitive design. The platform skilled nursing facilities trust.</p>
+          <p>Wound care EHR built on deterministic rules, FHIR R4, and 715K+ clinical terminology concepts. The platform wound care clinicians and billing specialists trust.</p>
         </div>
         <div class="footer-col">
           <h4>Platform</h4>
