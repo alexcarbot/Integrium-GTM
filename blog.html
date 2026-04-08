@@ -3,294 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog — Integrium</title>
-  <meta name="description" content="Insights on automotive AI, dealership operations, compliance, and the future of lead management from the Integrium team.">
-
+  <title>Blog — Integrium Core | EHR Insights for Skilled Nursing</title>
+  <meta name="description" content="Clinical insights, regulatory updates, and operational strategies for skilled nursing facilities and long-term care from the Integrium Core team.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- Navigation -->
   <nav class="nav scrolled" id="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M30 5C15.9 5 5 15.9 5 30s10.9 25 25 25 25-10.9 25-25S44.1 5 30 5z" stroke="#00508c" stroke-width="3.5" fill="none"/>
-          <path d="M30 12c-9.9 0-18 8.1-18 18s8.1 18 18 18" stroke="#b3bfcc" stroke-width="3.5" stroke-linecap="round" fill="none"/>
-          <path d="M48 30c0 9.9-8.1 18-18 18" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" fill="none"/>
-        </svg>
-        <span class="nav-logo-text">INTEGRIUM</span>
-      </a>
-      <div class="nav-tabs">
-        <a href="features.html">Features</a>
-        <a href="how-it-works.html">How It Works</a>
-        <a href="results.html">Results</a>
-        <a href="compliance.html">Compliance</a>
-        <a href="blog.html" class="active">Blog</a>
-      </div>
-      <div class="nav-right">
-        <a href="tel:+18554683474" class="nav-phone">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          (855) 468-3474
-        </a>
-        <span class="nav-divider"></span>
-        <a href="contact.html" class="nav-cta">Get a Demo</a>
-      </div>
-      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="index.html" class="nav-logo"><svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30 5C15.9 5 5 15.9 5 30s10.9 25 25 25 25-10.9 25-25S44.1 5 30 5z" stroke="#0f5f5c" stroke-width="3.5" fill="none"/><path d="M30 12c-9.9 0-18 8.1-18 18s8.1 18 18 18" stroke="#94a3b8" stroke-width="3.5" stroke-linecap="round" fill="none"/><path d="M48 30c0 9.9-8.1 18-18 18" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" fill="none"/></svg><span class="nav-logo-text">INTEGRIUM</span></a>
+      <div class="nav-tabs"><a href="features.html">Features</a><a href="how-it-works.html">How It Works</a><a href="results.html">Results</a><a href="compliance.html">Compliance</a><a href="blog.html" class="active">Blog</a></div>
+      <div class="nav-right"><a href="tel:+18554683474" class="nav-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(855) 468-3474</a><span class="nav-divider"></span><a href="contact.html" class="nav-cta">Request a Demo</a></div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
   </nav>
+  <div class="mobile-menu" id="mobileMenu"><a href="index.html">Home</a><a href="features.html">Features</a><a href="how-it-works.html">How It Works</a><a href="results.html">Results</a><a href="compliance.html">Compliance</a><a href="blog.html" class="active">Blog</a><a href="contact.html" class="mobile-cta">Request a Demo</a><a href="tel:+18554683474" class="mobile-phone"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(855) 468-3474</a></div>
 
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html">Home</a>
-    <a href="features.html">Features</a>
-    <a href="how-it-works.html">How It Works</a>
-    <a href="results.html">Results</a>
-    <a href="compliance.html">Compliance</a>
-    <a href="blog.html" class="active">Blog</a>
-    <a href="contact.html" class="mobile-cta">Get a Demo</a>
-    <a href="tel:+18554683474" class="mobile-phone"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(855) 468-3474</a>
-  </div>
-
-  <!-- Page Hero -->
   <section class="page-hero">
     <div class="page-hero-bg"></div>
     <div class="page-hero-grid"></div>
     <div class="container">
       <div class="page-hero-content">
         <span class="section-eyebrow">Insights &amp; Resources</span>
-        <h1 class="section-title">The Integrium Blog</h1>
-        <p class="section-desc">Industry perspectives, product updates, and actionable strategies for dealerships embracing AI-powered operations.</p>
+        <h1 class="section-title">The Integrium Core Blog</h1>
+        <p class="section-desc">Clinical insights, regulatory updates, and operational strategies for skilled nursing facilities embracing modern EHR technology.</p>
       </div>
     </div>
   </section>
 
-  <!-- Blog Posts -->
   <section class="section" style="background: var(--int-silver-100);">
     <div class="container">
-
-      <!-- Featured Post -->
-      <a href="blog-ai-automotive-retail.html" class="blog-featured reveal">
-        <div class="blog-card-image" style="background: linear-gradient(135deg, #011b31 0%, #00508c 100%);">
-          <div class="blog-card-image-pattern"></div>
-          <span class="blog-card-category">Featured</span>
-        </div>
+      <a href="blog-ai-clinical-documentation.html" class="blog-featured reveal">
+        <div class="blog-card-image" style="background: linear-gradient(135deg, #0f172a, #0f5f5c);"><div class="blog-card-image-pattern"></div><span class="blog-card-category">Featured</span></div>
         <div class="blog-card-body">
           <span class="blog-card-date">March 26, 2026</span>
-          <h2 class="blog-card-title">The State of AI in Automotive Retail: What Dealers Need to Know in 2026</h2>
-          <p class="blog-card-excerpt">A comprehensive look at how artificial intelligence is reshaping lead management, customer communication, and operational efficiency across dealerships nationwide. From conversational AI to predictive analytics, here's where the industry stands — and where it's headed.</p>
-          <div style="margin-top: var(--space-4);">
-            <span class="blog-card-author">By Integrium Research Team</span>
-          </div>
+          <h2 class="blog-card-title">AI in Clinical Documentation: How Modern EHRs Are Reducing Nurse Burden in Skilled Nursing</h2>
+          <p class="blog-card-excerpt">A deep look at how AI-enabled clinical rules and automated Medicare billing validation are transforming documentation workflows in SNFs — reducing errors, saving time, and improving care plan accuracy while alerting clinicians to non-billable treatments in real time.</p>
+          <div style="margin-top: var(--space-4);"><span class="blog-card-author">By Integrium Research Team</span></div>
         </div>
       </a>
 
-      <!-- Post Grid -->
       <div class="blog-grid" style="margin-top: var(--space-6);">
-
-        <a href="blog-tcpa-compliance-ai.html" class="blog-card reveal reveal-delay-1">
-          <div class="blog-card-image" style="background: linear-gradient(135deg, #0a2942, #0066b3);">
-            <div class="blog-card-image-pattern"></div>
-            <span class="blog-card-category">Compliance</span>
-          </div>
+        <a href="blog-cms-compliance-snf.html" class="blog-card reveal reveal-delay-1">
+          <div class="blog-card-image" style="background: linear-gradient(135deg, #1e293b, #14807b);"><div class="blog-card-image-pattern"></div><span class="blog-card-category">Compliance</span></div>
           <div class="blog-card-body">
             <span class="blog-card-date">March 20, 2026</span>
-            <h3 class="blog-card-title">TCPA Compliance in the Age of AI: A Dealership Guide</h3>
-            <p class="blog-card-excerpt">Navigating consent management, opt-out handling, and audit trails when AI is handling your customer interactions.</p>
+            <h3 class="blog-card-title">CMS Survey Readiness: A Practical Guide for SNF Administrators</h3>
+            <p class="blog-card-excerpt">How to maintain continuous survey readiness with integrated compliance monitoring instead of last-minute scrambles.</p>
           </div>
-          <div class="blog-card-footer">
-            <span class="blog-card-author">Sarah Chen</span>
-            <span class="blog-card-read">Read &rarr;</span>
-          </div>
+          <div class="blog-card-footer"><span class="blog-card-author">Sarah Chen</span><span class="blog-card-read">Read &rarr;</span></div>
         </a>
-
-        <a href="blog-speed-to-lead.html" class="blog-card reveal reveal-delay-2">
-          <div class="blog-card-image" style="background: linear-gradient(135deg, #143752, #3399d6);">
-            <div class="blog-card-image-pattern"></div>
-            <span class="blog-card-category">Strategy</span>
-          </div>
+        <a href="blog-mds-accuracy.html" class="blog-card reveal reveal-delay-2">
+          <div class="blog-card-image" style="background: linear-gradient(135deg, #334155, #059669);"><div class="blog-card-image-pattern"></div><span class="blog-card-category">Clinical</span></div>
           <div class="blog-card-body">
             <span class="blog-card-date">March 14, 2026</span>
-            <h3 class="blog-card-title">Speed-to-Lead: Why the First 5 Minutes Make or Break Your Conversion</h3>
-            <p class="blog-card-excerpt">Data from thousands of dealership interactions reveals the dramatic impact of response time on appointment rates and closed deals.</p>
+            <h3 class="blog-card-title">MDS Accuracy: Why It Matters and How AI Helps Get It Right</h3>
+            <p class="blog-card-excerpt">MDS errors directly impact PDPM reimbursement. Here's how AI-assisted validation dramatically reduces error rates.</p>
           </div>
-          <div class="blog-card-footer">
-            <span class="blog-card-author">Marcus Rivera</span>
-            <span class="blog-card-read">Read &rarr;</span>
-          </div>
+          <div class="blog-card-footer"><span class="blog-card-author">Dr. James Liu</span><span class="blog-card-read">Read &rarr;</span></div>
         </a>
-
-        <a href="blog-dms-integration-update.html" class="blog-card reveal reveal-delay-3">
-          <div class="blog-card-image" style="background: linear-gradient(135deg, #003d6b, #66b3e0);">
-            <div class="blog-card-image-pattern"></div>
-            <span class="blog-card-category">Product</span>
-          </div>
+        <a href="blog-billing-validation-denials.html" class="blog-card reveal reveal-delay-3">
+          <div class="blog-card-image" style="background: linear-gradient(135deg, #0d4f4c, #2dd4bf);"><div class="blog-card-image-pattern"></div><span class="blog-card-category">Revenue</span></div>
           <div class="blog-card-body">
             <span class="blog-card-date">March 8, 2026</span>
-            <h3 class="blog-card-title">What's New: DMS Integration Enhancements and Smarter Lead Scoring</h3>
-            <p class="blog-card-excerpt">Our latest release deepens CDK and Reynolds integrations while introducing intent-based lead scoring for better prioritization.</p>
+            <h3 class="blog-card-title">Reducing Claim Denials: How Real-Time Billing Validation Pays for Itself</h3>
+            <p class="blog-card-excerpt">When clinicians are alerted to non-billable treatments at point of care, denial rates drop dramatically. The math behind prevention vs. rework.</p>
           </div>
-          <div class="blog-card-footer">
-            <span class="blog-card-author">Integrium Product</span>
-            <span class="blog-card-read">Read &rarr;</span>
-          </div>
+          <div class="blog-card-footer"><span class="blog-card-author">Integrium Product</span><span class="blog-card-read">Read &rarr;</span></div>
         </a>
-
-        <a href="blog-bdc-ai-vs-traditional.html" class="blog-card reveal reveal-delay-1">
-          <div class="blog-card-image" style="background: linear-gradient(135deg, #011b31, #00508c);">
-            <div class="blog-card-image-pattern"></div>
-            <span class="blog-card-category">Operations</span>
-          </div>
+        <a href="blog-ehr-modernization-ltc.html" class="blog-card reveal reveal-delay-1">
+          <div class="blog-card-image" style="background: linear-gradient(135deg, #0f172a, #0f5f5c);"><div class="blog-card-image-pattern"></div><span class="blog-card-category">Technology</span></div>
           <div class="blog-card-body">
             <span class="blog-card-date">February 28, 2026</span>
-            <h3 class="blog-card-title">Building a High-Performance BDC: AI-Assisted vs. Traditional Models</h3>
-            <p class="blog-card-excerpt">How forward-thinking dealer groups are combining human expertise with AI orchestration to maximize their BDC output.</p>
+            <h3 class="blog-card-title">EHR Modernization in Long-Term Care: When to Make the Switch</h3>
+            <p class="blog-card-excerpt">Signs your legacy EHR is holding your facility back, and what to look for in a modern replacement.</p>
           </div>
-          <div class="blog-card-footer">
-            <span class="blog-card-author">James Whitfield</span>
-            <span class="blog-card-read">Read &rarr;</span>
-          </div>
+          <div class="blog-card-footer"><span class="blog-card-author">Karen Williams</span><span class="blog-card-read">Read &rarr;</span></div>
         </a>
-
-        <a href="blog-lead-leakage-cost.html" class="blog-card reveal reveal-delay-2">
-          <div class="blog-card-image" style="background: linear-gradient(135deg, #1e4665, #0066b3);">
-            <div class="blog-card-image-pattern"></div>
-            <span class="blog-card-category">Industry</span>
-          </div>
+        <a href="blog-staff-retention-ux.html" class="blog-card reveal reveal-delay-2">
+          <div class="blog-card-image" style="background: linear-gradient(135deg, #1e293b, #059669);"><div class="blog-card-image-pattern"></div><span class="blog-card-category">Operations</span></div>
           <div class="blog-card-body">
             <span class="blog-card-date">February 20, 2026</span>
-            <h3 class="blog-card-title">The Hidden Cost of Lead Leakage: How Dealerships Lose Revenue Without Knowing It</h3>
-            <p class="blog-card-excerpt">Most dealers underestimate how many qualified leads slip through the cracks. Here's how to measure — and fix — the problem.</p>
+            <h3 class="blog-card-title">The UX Factor: How EHR Design Impacts Staff Retention in Skilled Nursing</h3>
+            <p class="blog-card-excerpt">Bad EHR interfaces drive nurse burnout. Modern UX is a retention strategy, not just a nice-to-have.</p>
           </div>
-          <div class="blog-card-footer">
-            <span class="blog-card-author">Sarah Chen</span>
-            <span class="blog-card-read">Read &rarr;</span>
-          </div>
+          <div class="blog-card-footer"><span class="blog-card-author">Marcus Rivera</span><span class="blog-card-read">Read &rarr;</span></div>
         </a>
-
-        <a href="blog-casl-canadian-dealers.html" class="blog-card reveal reveal-delay-3">
-          <div class="blog-card-image" style="background: linear-gradient(135deg, #0a2942, #3399d6);">
-            <div class="blog-card-image-pattern"></div>
-            <span class="blog-card-category">Compliance</span>
-          </div>
+        <a href="blog-pdpm-optimization.html" class="blog-card reveal reveal-delay-3">
+          <div class="blog-card-image" style="background: linear-gradient(135deg, #334155, #14807b);"><div class="blog-card-image-pattern"></div><span class="blog-card-category">Revenue</span></div>
           <div class="blog-card-body">
             <span class="blog-card-date">February 12, 2026</span>
-            <h3 class="blog-card-title">CASL for Canadian Dealers: What Changes in 2026 and How to Prepare</h3>
-            <p class="blog-card-excerpt">New enforcement guidelines mean tighter requirements for electronic communications. A practical checklist for compliance.</p>
+            <h3 class="blog-card-title">PDPM Optimization: Maximizing Reimbursement Without Gaming the System</h3>
+            <p class="blog-card-excerpt">Ethical strategies for accurate PDPM classification that capture the reimbursement your residents' acuity justifies.</p>
           </div>
-          <div class="blog-card-footer">
-            <span class="blog-card-author">Integrium Legal</span>
-            <span class="blog-card-read">Read &rarr;</span>
-          </div>
+          <div class="blog-card-footer"><span class="blog-card-author">Integrium Clinical</span><span class="blog-card-read">Read &rarr;</span></div>
         </a>
-
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="cta">
     <div class="cta-bg"></div>
     <div class="container">
       <div class="cta-content reveal">
         <h2 class="cta-title">Stay ahead of the curve</h2>
-        <p class="cta-desc">Get the latest insights on automotive AI, compliance updates, and dealership strategy delivered to your inbox.</p>
-        <div class="cta-actions">
-          <a href="contact.html" class="btn btn-cta">Schedule a Demo</a>
-          <a href="features.html" class="btn btn-secondary">Explore Features</a>
-        </div>
+        <p class="cta-desc">Get the latest insights on EHR modernization, compliance updates, and clinical operations delivered to your inbox.</p>
+        <div class="cta-actions"><a href="contact.html" class="btn btn-cta">Schedule a Demo</a><a href="features.html" class="btn btn-secondary">Explore Features</a></div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="footer-logo">
-            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M30 5C15.9 5 5 15.9 5 30s10.9 25 25 25 25-10.9 25-25S44.1 5 30 5z" stroke="#00508c" stroke-width="3" fill="none"/>
-              <path d="M30 12c-9.9 0-18 8.1-18 18s8.1 18 18 18" stroke="#b3bfcc" stroke-width="3" stroke-linecap="round" fill="none"/>
-              <path d="M48 30c0 9.9-8.1 18-18 18" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none"/>
-            </svg>
-            <span class="footer-logo-text">INTEGRIUM</span>
-          </a>
-          <p>Premium automotive AI built on a foundation of integrity, integration, and trust. The platform serious operators choose.</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Platform</h4>
-          <ul>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="results.html">Results</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Legal</h4>
-          <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="compliance.html">Compliance</a></li>
-            <li><a href="#">Security</a></li>
-          </ul>
-        </div>
+        <div class="footer-brand"><a href="index.html" class="footer-logo"><svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30 5C15.9 5 5 15.9 5 30s10.9 25 25 25 25-10.9 25-25S44.1 5 30 5z" stroke="#0f5f5c" stroke-width="3" fill="none"/><path d="M30 12c-9.9 0-18 8.1-18 18s8.1 18 18 18" stroke="#94a3b8" stroke-width="3" stroke-linecap="round" fill="none"/><path d="M48 30c0 9.9-8.1 18-18 18" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none"/></svg><span class="footer-logo-text">INTEGRIUM</span></a><p>Modern EHR built on a foundation of clinical excellence, integrated compliance, and intuitive design. The platform skilled nursing facilities trust.</p></div>
+        <div class="footer-col"><h4>Platform</h4><ul><li><a href="features.html">Features</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="results.html">Results</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="#">Careers</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="compliance.html">Compliance</a></li><li><a href="#">Security</a></li></ul></div>
       </div>
-
-      <div class="footer-bottom">
-        <p class="footer-copyright">&copy; 2026 Integrium. All rights reserved.</p>
-        <div class="footer-social">
-          <a href="#" aria-label="LinkedIn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="#" aria-label="X / Twitter">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-          <a href="#" aria-label="YouTube">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          </a>
-        </div>
-      </div>
+      <div class="footer-bottom"><p class="footer-copyright">&copy; 2026 Integrium. All rights reserved.</p><div class="footer-social"><a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a href="#" aria-label="X / Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></div></div>
     </div>
   </footer>
-
-  <script>
-    (function() {
-      var nav = document.getElementById('nav');
-      window.addEventListener('scroll', function() {
-        nav.classList.toggle('scrolled', window.scrollY > 40);
-      });
-      var reveals = document.querySelectorAll('.reveal');
-      var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) entry.target.classList.add('visible');
-        });
-      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-      reveals.forEach(function(el) { observer.observe(el); });
-    })();
-    document.getElementById('mobileToggle').addEventListener('click', function() {
-      this.classList.toggle('open');
-      document.getElementById('mobileMenu').classList.toggle('open');
-    });
-  </script>
-
+  <script>(function(){var n=document.getElementById('nav');window.addEventListener('scroll',function(){n.classList.toggle('scrolled',window.scrollY>40)});var r=document.querySelectorAll('.reveal');var o=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.15,rootMargin:'0px 0px -40px 0px'});r.forEach(function(e){o.observe(e)})})();document.getElementById('mobileToggle').addEventListener('click',function(){this.classList.toggle('open');document.getElementById('mobileMenu').classList.toggle('open')});</script>
 </body>
 </html>

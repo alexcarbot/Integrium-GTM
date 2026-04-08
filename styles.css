@@ -2,25 +2,25 @@
    INTEGRIUM DESIGN TOKENS
    ============================================= */
 :root {
-  --int-navy-900: #011b31;
-  --int-navy-800: #0a2942;
-  --int-navy-700: #143752;
-  --int-navy-600: #1e4665;
-  --int-blue-700: #003d6b;
-  --int-blue-600: #00508c;
-  --int-blue-500: #0066b3;
-  --int-blue-400: #3399d6;
-  --int-blue-300: #66b3e0;
-  --int-blue-200: #99cceb;
-  --int-blue-100: #e8f1f8;
-  --int-silver-600: #8a99ab;
-  --int-silver-500: #b3bfcc;
-  --int-silver-400: #c4cdd8;
-  --int-silver-300: #d4dce6;
-  --int-silver-200: #e4e9ef;
-  --int-silver-100: #f4f6f8;
+  --int-navy-900: #0f172a;
+  --int-navy-800: #1e293b;
+  --int-navy-700: #334155;
+  --int-navy-600: #475569;
+  --int-blue-700: #0d4f4c;
+  --int-blue-600: #0f5f5c;
+  --int-blue-500: #14807b;
+  --int-blue-400: #2dd4bf;
+  --int-blue-300: #5eead4;
+  --int-blue-200: #99f6e4;
+  --int-blue-100: #f0fdfa;
+  --int-silver-600: #64748b;
+  --int-silver-500: #94a3b8;
+  --int-silver-400: #a8b5c4;
+  --int-silver-300: #cbd5e1;
+  --int-silver-200: #e2e8f0;
+  --int-silver-100: #f8fafc;
   --int-white: #ffffff;
-  --int-success: #0d7a4a;
+  --int-success: #059669;
 
   --font-display: 'Outfit', system-ui, -apple-system, sans-serif;
   --font-body: 'Source Sans 3', system-ui, -apple-system, sans-serif;
@@ -41,10 +41,10 @@
   --radius-xl: 16px;
   --radius-full: 9999px;
 
-  --shadow-sm: 0 1px 2px rgba(1, 27, 49, 0.05);
-  --shadow-md: 0 4px 8px rgba(1, 27, 49, 0.08);
-  --shadow-lg: 0 8px 24px rgba(1, 27, 49, 0.12);
-  --shadow-xl: 0 16px 48px rgba(1, 27, 49, 0.16);
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 8px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.12);
+  --shadow-xl: 0 16px 48px rgba(15, 23, 42, 0.16);
 
   --transition-fast: 100ms ease-out;
   --transition-base: 200ms ease-out;
@@ -460,7 +460,7 @@ body {
 .page-hero {
   position: relative;
   padding: 160px 0 80px;
-  background: linear-gradient(155deg, var(--int-navy-900) 0%, #021f38 50%, var(--int-blue-700) 100%);
+  background: linear-gradient(155deg, var(--int-navy-900) 0%, #162032 50%, var(--int-blue-700) 100%);
   overflow: hidden;
 }
 
@@ -1067,7 +1067,7 @@ select.form-input {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(155deg, var(--int-navy-900) 0%, #021f38 35%, var(--int-blue-700) 70%, var(--int-blue-600) 100%);
+  background: linear-gradient(155deg, var(--int-navy-900) 0%, #162032 35%, var(--int-blue-700) 70%, var(--int-blue-600) 100%);
   overflow: hidden;
 }
 
@@ -1389,7 +1389,7 @@ select.form-input {
 .article-hero {
   position: relative;
   padding: 160px 0 60px;
-  background: linear-gradient(155deg, var(--int-navy-900) 0%, #021f38 50%, var(--int-blue-700) 100%);
+  background: linear-gradient(155deg, var(--int-navy-900) 0%, #162032 50%, var(--int-blue-700) 100%);
   overflow: hidden;
 }
 
