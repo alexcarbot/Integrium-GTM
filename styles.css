@@ -485,7 +485,7 @@ body {
 .page-hero-content {
   position: relative;
   z-index: 2;
-  max-width: 680px;
+  max-width: 760px;
 }
 
 .page-hero .section-eyebrow {
@@ -495,7 +495,7 @@ body {
 
 .page-hero .section-title {
   color: var(--int-white);
-  font-size: clamp(36px, 4vw, 52px);
+  font-size: clamp(32px, 3.6vw, 48px);
   text-align: left;
 }
 
